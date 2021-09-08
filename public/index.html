@@ -26,7 +26,7 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +39,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+		   <form id="form" style="display: none;">
+            <input id="per-line" type="checkbox" /> <input id="max" value="1000" type="number" min="1" /> <input id="archimedean" value="archimedean" type="radio" name="spiral" checked />
+            <input id="rectangular" value="rectangular" type="radio" name="spiral" /> <input id="scale-log" value="log" type="radio" name="scale" /> <input id="scale-sqrt" value="sqrt" type="radio" name="scale" />
+            <input id="scale-linear" value="linear" type="radio" name="scale" checked /> <input id="font" value="Impact" /> <input id="angle-count" value="5" type="number" min="1" />
+            <input id="angle-from" value="90" type="number" min="-90" max="90" /> <input id="angle-to" value="-90" type="number" min="-90" max="90" />
+        </form>
   </body>
+  <script src="d3.min.js"></script>
+  <script src="cloud.min.js"></script>
 </html>
